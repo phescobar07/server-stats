@@ -1,9 +1,19 @@
 # Server Stats Script
 
-Bash Script to analyze the performance of your Linux server.
+This is a simple Bash script to analyze server perfomance stats on any Linux server.
 
-## Executar 
+## Features
+- CPU Usage
+- Memory usage
+- Disk usage
+- Top 5 CPU-heavy processes
+- Top 5 memory-heavy processes
+- [Optional] OS version, uptime, load average, logged-in users, failed login attempts
 
+## Usage
+
+1. Clone the repository:
 'bash'
-chmod -x server-stats.sh
-./server-stats.sh
+git clone https://github.com/username/server-stats.git
+cd server-stats
+(change the username in the URL)

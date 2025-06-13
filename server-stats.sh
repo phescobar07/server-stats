@@ -29,7 +29,7 @@ echo ""
 
 # CPU Usage
 echo ">> Total CPU usage:"
-top -bn1 | grep "Cpu(s)' | \
+top -bn1 | grep "Cpu(s)" | \
 	awk '{print "Used: " $2 + $4 "% | Idle: " $8 "%"}'
 
 # Memory Usage
@@ -37,7 +37,7 @@ echo ">> Memory Usage:"
 free -h | awk '/Mem:/ {
 	used=$3; free=$4; total=$2;
 	percent=($3/$2)*100;
-	printf("Used: %s | Free: %s | Total: %s | Usage: %.2f%%\n", used, free, total, percent}
+	printf("Used: %s | Free: %s | Total: %s | Usage: %.2f%%\n", used, free, total, percent
 }'
 echo ""
 
@@ -54,7 +54,7 @@ echo ""
 
 # Top 5 Memory-consuming processes
 echo ">> Top 5 Memory-consuming processes:"
-ps- eo pid,ppid,cmd,%mem --sort=-%mem | head -n 6
+ps -eo pid,ppid,cmd,%mem --sort=-%mem | head -n 6
 echo ""
 
 #Stretch goal: Failed login attempts
