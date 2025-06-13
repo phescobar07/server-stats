@@ -17,3 +17,5 @@ This is a simple Bash script to analyze server perfomance stats on any Linux ser
 git clone https://github.com/username/server-stats.git
 cd server-stats
 (change the username in the URL)
+
+https://roadmap.sh/projects/server-stats
